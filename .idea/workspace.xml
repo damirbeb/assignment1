@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4401f385-f68d-430d-8d2e-c866ee3839e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/source" afterDir="false" />
+    <list default="true" id="4401f385-f68d-430d-8d2e-c866ee3839e7" name="Changes" comment="1commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Shape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.MyApplication.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -65,12 +63,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703041775171</updated>
-      <workItem from="1703041776241" duration="325000" />
+      <workItem from="1703041776241" duration="2077000" />
     </task>
+    <task id="LOCAL-00001" summary="1commit">
+      <option name="closed" value="true" />
+      <created>1703042407796</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703042407796</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="1commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -79,6 +90,11 @@
           <url>file://$PROJECT_DIR$/src/MyApplication.java</url>
           <line>12</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/models/Point.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

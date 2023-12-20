@@ -4,10 +4,24 @@ public class Point {
     private double x;
     private double y;
 
-    // constructor having both parameters
+    // Constructor to initialize a point with given x and y coordinates
+    public Point(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
 
-    // distance(Point dest) - distance from current point to the dest point
+    // Calculate and return the distance from the current point to the destination point
+    public double distanceTo(Point destination) {
+        double deltaX = destination.x - this.x;
+        double deltaY = destination.y - this.y;
+        return Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+    }
 
-    // toString
+    // Provide a string representation of the point
+
+    //public String toString() {
+        //return "(" + x + ", " + y + ")";
+    //}
 }
+
 
