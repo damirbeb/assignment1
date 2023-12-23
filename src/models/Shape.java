@@ -1,44 +1,57 @@
 package models;
 
-public class Shape {
-    private Point[] points;
+import java.util.ArrayList;
 
-    // Constructor to initialize a shape with an array of points
-    public Shape(Point[] points) {
-        this.points = points;
+public class Shape {
+    //Store points forming the shape
+    ArrayList<Point> points = new ArrayList<>();
+
+    //Adding a point to the list
+    public void addPoint(Point point) {
+        points.add(point);
     }
 
-    // Calculate and return the perimeter of the shape
-    public double perimeter() {
+    //Calculating the perimeter
+    public double calculatePerimeter() {
         double perimeter = 0;
-        for (int i = 0; i < points.length - 1; i++) {
-            perimeter += points[i].distanceTo(points[i + 1]);
+        int size = points.size();
+
+        //Calculating the distance to the next point
+        for (int i = 0; i < size; i++) {
+            Point currentPoint = points.get(i);
+            Point nextPoint = points.get((i + 1) % size);
+
+            perimeter += currentPoint.distance(nextPoint);
         }
-        perimeter += points[points.length - 1].distanceTo(points[0]); // Closing the shape
+
         return perimeter;
     }
 
-    // Find and return the length of the longest side in the shape
-    public double longestSide() {
+    //Average side length
+    public double getAverageSide() {
+        int size = points.size();
+        if (size == 0) {
+            return 0;
+        }
+
+        return calculatePerimeter() / size;
+    }
+
+    //The longest side
+    public double getLongestSide() {
         double longestSide = 0;
-        for (int i = 0; i < points.length - 1; i++) {
-            double sideLength = points[i].distanceTo(points[i + 1]);
-            if (sideLength > longestSide) {
-                longestSide = sideLength;
+
+        //Finding the length of the current side
+        for (int i = 0; i < points.size(); i++) {
+            Point currentPoint = points.get(i);
+            Point nextPoint = points.get((i + 1) % points.size());
+
+            double currentSide = currentPoint.distance(nextPoint);
+            if (currentSide > longestSide) {
+                longestSide = currentSide;
             }
         }
-        longestSide = Math.max(longestSide, points[points.length - 1].distanceTo(points[0])); // Closing the shape
+
         return longestSide;
     }
-
-    // Calculate and return the average length of the sides in the shape
-    public double averageSide() {
-        double totalSideLength = 0;
-        for (int i = 0; i < points.length - 1; i++) {
-            totalSideLength += points[i].distanceTo(points[i + 1]);
-        }
-        totalSideLength += points[points.length - 1].distanceTo(points[0]); // Closing the shape
-        return totalSideLength / points.length;
-    }
 }
-
